@@ -59,4 +59,6 @@ tipeamos en la terminal `deactivate`.
 
 - Cuenta con una página de inicio donde se puede apreciar el listado de alumnos presentes en la base de datos.
 - Además posee botones para acceder a las secciones de agregar y editar alumnos desde un formulario y permite borrar alumnos desde otro botón destinado a ello.
+- También es posible agregar, editar y eliminar alumnos desde el panel de administrador de Django (que se accede desde la url: (http://localhost:8000/admin)), creando un usuario antes desde la consola.
+  Para ello nos situamos en la carpeta _sistema_, tipeamos `python manage.py createsuperuser` y seguimos las instrucciones que nos aparecen.
 - Toda la interfaz de usuario (UI) se desarrollo mediante el uso de **Bootstrap 5.3.3**.
