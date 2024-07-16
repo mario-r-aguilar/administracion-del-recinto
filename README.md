@@ -4,7 +4,7 @@
 
 Proyecto destinado a prácticar Django.
 Su estructura se baso en el tutorial de Youtube creado en el canal
-[Develoteca - Oscar Uh](https://www.youtube.com/watch?v=ezIj71CX944)
+**[Develoteca - Oscar Uh](https://www.youtube.com/watch?v=ezIj71CX944)**
 y adaptado a una necesidad real de planillas de Google Sheets pertenecientes
 a la administración de un recinto de artes marciales.
 
@@ -26,7 +26,8 @@ Por último, dado que el proyecto utiliza una base de datos SQL creada con
 Primero se debe configurar la información sobre el acceso a tu base de datos en
 el archivo **settings.py** que se encuentra en _sistema/sistema_, en el apartado:
 
-```DATABASES = {
+```
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
             'NAME': 'nombre-de-la-base-de-datos',
