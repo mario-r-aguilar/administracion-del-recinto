@@ -1,0 +1,15 @@
+{% extends "base/base.html" %}
+{% block title %}
+    Editar Alumnos - Administración
+    del Recinto
+{% endblock title %}
+{% block content %}
+    <div class="card w-50">
+        <div class="card-header">Editar Información del Alumno</div>
+        <div class="card-body">
+            <h4 class="card-title">Datos del Alumno</h4>
+            {% include "pages/form.html" %}
+        </div>
+        <div class="card-footer text-muted"></div>
+    </div>
+{% endblock content %}
