@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
-import os
+import os # Proporciona funciones para interactuar con el sistema operativo, como el manejo de rutas de archivos
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -77,12 +77,13 @@ WSGI_APPLICATION = 'sistema.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.mysql', # Especifica que se utilizará MySQL como el motor de base de datos
+            # Datos de acceso a la base de datos
             'NAME': 'studentsList',
             'USER': 'rootUser',
             'PASSWORD': 'Recint0',
-            'HOST': 'localhost',
-            'PORT': '3306',
+            'HOST': 'localhost', # Dirección del host donde se ejecuta la base de datos, 'localhost' para local
+            'PORT': '3306', # Puerto en el que la base de datos MySQL está escuchando
     }
 }
 
@@ -124,7 +125,10 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 # Media files
+# Define la ruta donde se almacenarán los archivos multimedia
+# BASE_DIR hace referencia al directorio base de tu proyecto
 MEDIA_ROOT = os.path.join(BASE_DIR,'')
+# Define la URL base a través de la cual se accederán los archivos multimedia
 MEDIA_URL = '/images/'
 
 # Default primary key field type

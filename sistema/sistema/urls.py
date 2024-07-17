@@ -19,6 +19,6 @@ from django.urls import path
 from django.urls import include
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('students.urls'))
+    path('admin/', admin.site.urls), # Ruta para acceder al panel de administración de Django
+    path('', include('students.urls')) # Incluye las rutas definidas en la aplicación 'students'
 ]

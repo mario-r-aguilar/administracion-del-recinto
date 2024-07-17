@@ -1,8 +1,8 @@
 from django.urls import path
 from . import views
-
+# Importaciones para permitir renderizar imagenes desde sus rutas
 from django.conf import settings
-from django.contrib.staticfiles.urls import static
+from django.contrib.staticfiles.urls import static 
 
 urlpatterns = [
     path('', views.index, name='index'),
@@ -10,4 +10,6 @@ urlpatterns = [
     path('updatestudent/', views.updateStudent, name='updatestudent'),
     path('updatestudent/<int:dni>', views.updateStudent, name='updatestudent'),
     path('deleteStudent/<int:dni>', views.deleteStudent, name='deleteStudent' ),
-]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) # Permite renderizar imagenes desde sus rutas
+    
+    # Código para permitir renderizar imagenes desde sus rutas
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) 
